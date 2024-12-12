@@ -4,11 +4,7 @@ body {
     background: url('image1.jpg');
     background-size: cover;
     animation: slideshow 15s infinite;
-  }
-.h1{
-    font size: 20;
-    color: Red;
-    width: 16;
+}
   
   @keyframes slideshow {
     0% {
