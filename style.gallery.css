@@ -1,0 +1,146 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background: url('image1.jpg');
+    background-size: cover;
+    animation: slideshow 15s infinite;
+  }
+  
+  @keyframes slideshow {
+    0% {
+      background-image: url('HIPHOP1.jpg');
+    }
+    33% {
+      background-image: url('HIPHOP2.jpg');
+    }
+    67% {
+      background-image: url('debate1.png');
+    }
+    100% {
+      background-image: url('debate2.png');
+    }
+  }
+  
+
+
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:violet;
+}
+
+/* Main gallery container */
+.gallery {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Styling for each event section */
+.event {
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color:#d8d1d1;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+    opacity: 0;
+    animation: fadeIn 2.16s ease-out forwards;
+    
+    
+}
+
+/* Event header styling */
+.event h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Styling for event image containers */
+.event-images {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    flex: 1;
+    margin: 0;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(117, 12, 64, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.05); /* Zoom in on hover */
+}
+
+/* Captions under images */
+figcaption {
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    margin-top: 20  px;
+    font-style: italic;
+    
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Animation for individual image hover */
+.image-container:hover {
+    transform: scale(1.02); 
+}
+/* Style for the back div */
+div.back {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+/* Style for the back link */
+div.back li {
+    display: inline-block; 
+    margin: 0 15px; 
+}
+
+/* Style for the back link to resemble a button */
+div.back a {
+    display: inline-block;
+    background-color: #FF5733; 
+    color: white; 
+    padding: 15px 40px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    border-radius: 25px;
+    text-decoration: none; 
+    transition: all 0.3s ease;
+    text-transform: uppercase; 
+}
+
+div.back a:hover {
+    background-color: #C0392B; 
+    transform: scale(1.05); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
+}

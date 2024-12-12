@@ -1,0 +1,185 @@
+
+/* Reset default margins and paddings for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* General styling*/
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.1;
+    background-color:violet;
+    color: #333;
+    padding: 20px;
+    background: url('image1.jpg');
+    background-size: cover;
+    animation: slideshow 15s infinite;
+  }
+  
+  @keyframes slideshow {
+    0% {
+      background-image: url('lux.jpg');
+    }
+    33% {
+      background-image: url('Candidate.jpg');
+    }
+    67% {
+      background-image: url('lux.jpg');
+    }
+    100% {
+      background-image: url('Candidate.jpg');
+    }
+  }
+/* Reset default margins and paddings for all elements */
+* {
+    margin: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2%;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+/*  styles for the content */
+.content {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    opacity: 0; /* Start as invisible */
+    animation: fadeInContent 2s ease forwards; /* Fade in the entire content */
+    background-color:rgb(12, 126, 227);
+    
+}
+
+/* Animation for the image */
+.home.img {
+    display: inline-block;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: slideInImage 2s ease-out 0.5s forwards; /* Slide image in */
+}
+
+.home.img img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation for the heading */
+h2 {
+    font-size: 2.10em;
+    color: rgb(126, 10, 126);
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeInHeading 2s ease-out 1s forwards; 
+}
+
+/* Animation for the paragraphs */
+p {
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+    line-height: 1.6;
+    opacity: 0;
+    animation: fadeInParagraph 2s ease-out 1.5s forwards; 
+    margin-top: 20px;
+}
+
+/* Keyframes for fade-in content */
+@keyframes fadeInContent {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Keyframes for image sliding */
+@keyframes slideInImage {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Keyframes for heading fade-in */
+@keyframes fadeInHeading {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Keyframes for paragraph fade-in */
+@keyframes fadeInParagraph {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1rem;
+    color: #777;
+}
+/* Style for the footer */
+footer {
+    background-color:rgb(78, 12, 78)#f4f4f4; 
+    padding: 20px 0; 
+    text-align: center; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* sa navigation link */
+footer .gallery li {
+    display: inline-block; 
+    margin: 0 15px; 
+}
+
+/* Style for the link nga button */
+footer .gallery a {
+    display: inline-block;
+    background-color: #007BFF; 
+    color:white; 
+    padding: 12px 30px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    border-radius: px; 
+    text-decoration: none; 
+    transition: all 0.3s ease; 
+    text-transform: uppercase; 
+}
+/* Hover effect for the link */
+footer .gallery a:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
+}
+
+/* Focused style (for accessibility) */
+footer .gallery a:focus {
+    outline: 3px solid #FFD700; 
+    outline-offset: 2px; 
+}

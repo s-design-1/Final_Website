@@ -1,0 +1,291 @@
+body {
+    height: 95vh;
+    margin: 0;
+    background: url('image1.jpg');
+    background-size: cover;
+    animation: slideshow 15s infinite;
+  }
+  
+  @keyframes slideshow {
+    0% {
+      background-image: url('Cam.jpg');
+    }
+    33% {
+      background-image: url('cam2.jpg');
+    }
+    67% {
+      background-image: url('cam3.jpg');
+    }
+    100% {
+      background-image: url('cam3.jpg');
+    }
+  }
+  
+  
+/* Main Content Section */
+.main-content {
+    width: 80%;
+    max-width: 1000px;
+    background-color:violet;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 12px 6px rgba(220, 9, 9, 0.1);
+    margin-top: 40px;
+    animation: slideUp 1s ease-out;
+}
+
+/* Image Styling with Animation */
+.home-image {
+    text-align: center;
+    animation: zoomIn 3s ease-in-out infinite alternate;
+}
+
+.home-image img {
+    width: 20%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+
+
+/* Hover effect for image */
+.home-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Intro Text Styling */
+.intro-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #333;
+    animation: fadeInText 2s ease-out;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column-reverse;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .main-content {
+        width: 95%;
+    }
+
+    .header-text {
+        font-size: 28px;
+    }
+
+    .home-image img {
+        max-width: 100%;
+    }
+
+    .intro-text p {
+        font-size: 16px;
+    }
+}
+/*  */
+.navbar {
+    background-color: transparent; 
+    padding: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start; 
+}
+
+.nav-links li {
+    margin-right: 20px; 
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(29, 22, 25);
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+    background-color:transparent; 
+    padding: 2px;
+    margin-top: auto;
+}
+
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the div */
+.sliding-bg {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    background-image: url('https://via.placeholder.com/800x600');
+    background-size: cover;
+    background-position: 0% 0%;
+    animation: slideImage 10s linear infinite; 
+
+}
+
+
+
+header {
+    background-color: rgb(139, 48, 139);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: auto;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.main-content {
+    text-align: center;
+    padding: 20px;
+    margin: 0 10%;
+    background-color:rgb(213, 204, 204);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    height: fit-content;
+}
+
+.main-content p {
+    font-size: 1.5em;
+    font-style: italic;
+    color:black;
+}
+
+footer {
+    background-color: #333;
+    color: rgb(190, 183, 183);
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+
+
+
+/* Style for the div wrapper */
+.home-image {
+    text-align: center; 
+    margin: 20px auto;  
+    max-width: 90%;     
+}
+  /* Basic reset for list and navigation */
+  nav.i {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+/* Style for each list item */
+nav.i li {
+    margin: 10px;
+}
+
+/* Button-like styling for the links */
+nav.i li a {
+    text-decoration: none; 
+    color: white; 
+    background-color: #007bff; 
+    padding: 12px 20px; 
+    border-radius: 5px; 
+    font-size: 16px;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for the buttons */
+nav.i li a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight scale up effect */
+}
+
+/* Optional: Focus effect to make it more accessible */
+nav.i li a:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Blue focus outline */
+}
+
+
