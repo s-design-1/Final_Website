@@ -18,12 +18,12 @@ body {
     text-transform: capitalize;
     font-style: italic;
     padding-top: 0px;
-    height: 95vh; 
+    height: 100vh; 
     position: absolute;
     top: 0; 
     right: 7%; 
     transform: translateX(-6%); 
-    font-size: 95px;
+    font-size:90px;
     text-align: center;
 }
 
